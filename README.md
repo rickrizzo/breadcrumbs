@@ -4,10 +4,12 @@ A tool for those seeking adventure, and a chance for me to practice with the MEA
 * GitHub
 * Node.js
 * Angular.js
+* Express
+* MongoDB
 * Gulp
 * SASS
 * Heroku
 * TravisCI
+* Bootstrap 2
 
 The end goal is to create a simple site with a RESTful API and then call that in iOS, and learn how to iOS development at the same time
-I decided not to use Express so I would get a better understanding of how things work.
