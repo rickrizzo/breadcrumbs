@@ -1,0 +1,23 @@
+{
+  "name": "breadcrumbs",
+  "version": "1.0.0",
+  "description": "A tool for those seeking adventure, and a chance for me to practice with the MEAN stack. ###In this project I plan to use the following * GitHub * Node.js * Angular.js * Express * MongoDB * Gulp * SASS * Heroku * TravisCI * Bootstrap 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickrizzo/breadcrumbs.git"
+  },
+  "author": "Robert Russo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rickrizzo/breadcrumbs/issues"
+  },
+  "homepage": "https://github.com/rickrizzo/breadcrumbs#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
