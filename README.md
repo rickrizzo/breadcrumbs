@@ -1,4 +1,4 @@
-# Breadcrumbs
+# Breadcrumbs [![Build Status](https://travis-ci.org/rickrizzo/breadcrumbs.svg?branch=master)](https://travis-ci.org/rickrizzo/breadcrumbs)
 A tool for those seeking adventure, and a chance for me to practice with the MEAN stack.
 ###In this project I plan to use the following
 * GitHub
