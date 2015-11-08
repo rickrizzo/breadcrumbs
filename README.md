@@ -5,13 +5,14 @@ A tool for those seeking adventure, and a chance for me to practice with the MEA
 * Node.js
 * Angular.js
 * Express
+* Jade
 * MongoDB
 * Gulp
 * SASS
 * Heroku
-* TravisCI
-* Bootstrap 2
+* Travis CI
+* Bootstrap 3
 
 The end goal is to create a simple site with a RESTful API and then call that in iOS, and learn how to iOS development at the same time
 
-My tutorial: http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/
+Sources used in this project: http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/

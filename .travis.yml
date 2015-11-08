@@ -1,6 +1,8 @@
 language: node_js
 node_js:
-  - "5.0"
-  - "4.1"
-  - "4.0"
-  - "iojs"
+- '5.0'
+- iojs
+deploy:
+  provider: heroku
+  api_key:
+    secure: s0eZFZVjQLLKCQ0czqAZ1BC3GaafIdWsMwFo87iJ2qQyiQ9m0QNt2KAKx8WxCW+WUfDetC39YW1ww9cx+vJ0R+EFpDyBZi+90eYykL/W4T6V2/R6S4R6XW1V5V416mzQNOYJOzrjmHgCj0Cu/myJNXFLQ4yzGx6ZOrqaDUMz1W2WJxbTjlY7n7uSTVF2e+4lotUdgJ+FCtk53JS4Saqcq/459fOtRN6Q3kSw3ieQSWMwPc6QreCzdgCc2jy0eOav1ZhoyJEVi+xp+U/gp5O3sf/M8MnAvRryMNwgdpARewJxoN4nmFElCPeguq7qTmxWoEBLEnTFEcmt1pBg+sUOZO0XYsg6/9Krp2RXzDOYzLZLKBeI12i5mQhG0yLUrDBPHdvmrfvmKUfKsumqB2NaYJ9wuimDWjgGcQNqEvIOYJTswIPiDhBdHZC0q6wWiph2WnWXdkQzPwIL867pndjZixZQupywGScbzmZTip829yB2BuL5cNj8fa+6OnBjk33TsVYTKA0eZmz73lV91evyh1I2xQgHb9ZhiM5vOgoKe0+BOjvHi8uauTXxFRSNJRkUI9bXi+VhDeRQmNMUNEpp0IMEfOau3JXmICG0mfIC64Di6jWmcxXS7kQdVibrohMHpTfn//m/2Jt1gTQGYuFMVeHsrlEAbPSTxmHq2GQco9Y=
