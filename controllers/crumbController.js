@@ -14,6 +14,7 @@ module.exports = {
   },
   create: function(req, res) {
     var crumb = new crumbModel({
+      trip : req.body.trip,
       latitude : req.body.lat,
       longitude : req.body.long
     });
@@ -25,10 +26,10 @@ module.exports = {
           error: err
         });
       }
-      /*return res.json({
+      return res.json({
         message: 'saved',
         _id: crumb._id
-      });*/
+      });
     });
   }
 };

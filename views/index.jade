@@ -5,11 +5,20 @@ block content
     h1= title
     p Welcome to #{title}
   main
-    button#location.btn Get Location
     form(name="test", action="/api/crumbs/add", method="post")
-      input#lat(type="text", name="lat")
-      input#long(type="text", name="long")
-      input(type="submit", value="Submit Location")
+      div.input
+        label(for="trip") Trip
+        input#trip(type="text", name="trip" required)
+      div.input
+        label(for="lat") Latitude
+        input#lat(type="text", name="lat" required)
+        label(for="long") Longitude
+        input#long(type="text", name="long" required)
+        button#location.btn Get Location
+      div.submit
+        input(type="submit", value="Submit")
     a(href="/api/crumbs/") All Crumbs
-
-  script(type="text/javascript", src= scripts)
+    div#map
+  script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js")
+  script(type="text/javascript", src= scripts[0])
+  script(type="text/javascript", src= scripts[1])
