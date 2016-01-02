@@ -6,9 +6,10 @@ block content
     p Welcome to #{title}
   main
     button#location.btn Get Location
-    form(name="test", action="", method="post")
+    form(name="test", action="/api/crumbs/add", method="post")
       input#lat(type="text", name="lat")
       input#long(type="text", name="long")
       input(type="submit", value="Submit Location")
+    a(href="/api/crumbs/") All Crumbs
 
   script(type="text/javascript", src= scripts)
