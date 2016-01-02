@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  header
+    h1= title
+    p Welcome to #{title}
+  main
+    button#location.btn Get Location
+    form(name="test", action="", method="post")
+      input#lat(type="text", name="lat")
+      input#long(type="text", name="long")
+      input(type="submit", value="Submit Location")
+
+  script(type="text/javascript", src= scripts)
