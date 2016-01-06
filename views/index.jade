@@ -1,24 +1,50 @@
 extends layout
 
 block content
+  
   header
     h1= title
     p Welcome to #{title}
+  
   main(ng-app="")
+    
+    //example angular code
+    p Name : 
+      input(type="text", ng-model="name")
+    h1(ng-bind="name")
+    
+    //Post Location
     form(name="test", action="/api/crumbs/add", method="post")
+      
+      //Trip Name
       div.input
         label(for="trip") Trip Name
         input#trip(type="text", name="trip" required)
+
+      //Location
       div.input
+        //Latitude
         label(for="lat") Latitude
         input#lat(type="text", name="lat" required)
+
+        //Longitude
         label(for="long") Longitude
         input#long(type="text", name="long" required)
+        
+        //Get Location
         button#location.btn Get Location
+
+      //Submit Location
       div.submit
         input(type="submit", value="Submit")
+
+    //Show Points in Database
     a(href="/api/crumbs/") All Crumbs
+
+    //Map
     div#map
+
+  //Scripts
   script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js")
   script(type="text/javascript", src= angular)
   script(type="text/javascript", src= scripts[0])
