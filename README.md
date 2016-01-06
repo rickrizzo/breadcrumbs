@@ -6,16 +6,19 @@ A tool for those seeking adventure, and a chance for me to practice with the MEA
 ###In this project I plan to use the following
 * GitHub
 * Node.js
-* Angular.js
-* Express
+* Express.js
 * Jade
+* Angular.js
 * MongoDB
-* Gulp
-* SASS
 * Heroku
 * Travis CI
 * Bootstrap 3
+* Gulp
+* SASS
 
-The end goal is to create a simple site with a RESTful API and then call that in iOS, and learn how to iOS development at the same time
+###Goals
+The end goal is to create a simple site with a RESTful API and then call that in iOS, and potentially watchOS. Learning good design practices and deployment strategies are also goals. Progress will be posted on my [blog](thoughts.robrusso.io).
 
-Sources used in this project: http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/
+Sources
+- http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/
+- http://stackoverflow.com/

@@ -4,10 +4,10 @@ block content
   header
     h1= title
     p Welcome to #{title}
-  main
+  main(ng-app="")
     form(name="test", action="/api/crumbs/add", method="post")
       div.input
-        label(for="trip") Trip
+        label(for="trip") Trip Name
         input#trip(type="text", name="trip" required)
       div.input
         label(for="lat") Latitude
@@ -20,5 +20,6 @@ block content
     a(href="/api/crumbs/") All Crumbs
     div#map
   script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js")
+  script(type="text/javascript", src= angular)
   script(type="text/javascript", src= scripts[0])
   script(type="text/javascript", src= scripts[1])
