@@ -31,5 +31,18 @@ module.exports = {
         _id: crumb._id
       });
     });
+  },
+  delete: function(req, res) {
+    crumbModel.remove({
+      _id : req.params.crumb_id
+    }, function(err, crumb) {
+      if(err) {
+        return res.json(500, {
+          message: 'Error deleting crumb',
+          error: err
+        });
+      }
+      return res.json(crumbs);
+    });
   }
 };
