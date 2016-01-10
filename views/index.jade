@@ -6,12 +6,11 @@ block content
     h1= title
     p Welcome to #{title}
   
-  main(ng-app="")
+  main(ng-controller="mainController")
     
     //example angular code
-    p Name : 
-      input(type="text", ng-model="name")
-    h1(ng-bind="name")
+    div(ng-repeat="crumb in crumbs")
+      {{crumb.latitude}}
     
     //Post Location
     form(name="test", action="/api/crumbs/add", method="post")
@@ -49,3 +48,4 @@ block content
   script(type="text/javascript", src= angular)
   script(type="text/javascript", src= scripts[0])
   script(type="text/javascript", src= scripts[1])
+  script(type="text/javascript", src= scripts[2])

@@ -5,8 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', {
     title: 'Breadcrumbs',
+    ngapp: 'crumbModule',
     angular: '/scripts/angular/angular.min.js',
-    scripts: ['javascripts/location.js', 'javascripts/map.js']
+    scripts: ['javascripts/location.js', 'javascripts/map.js', 'controllers/mainController.js']
   });
 });
 
