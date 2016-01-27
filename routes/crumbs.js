@@ -13,4 +13,9 @@ router.get('/', function(req, res, next) {
   crumbController.showAll(req, res);
 });
 
+// draw map
+router.get('/map', function(req, res, next) {
+
+});
+
 module.exports = router;

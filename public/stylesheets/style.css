@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 1em 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -7,7 +7,51 @@ a {
   color: #00B7FF;
 }
 
+nav {
+  background-color: black;
+  border-radius: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav ul {
+  padding: 1em 0;
+}
+
+nav ul li {
+  color: white;
+  margin: 0 1em;
+  display: inline;
+}
+
+nav ul li:hover {
+  color: yellow;
+}
+
+header {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+div.input {
+  margin: 1em;
+  text-align: center;
+}
+
+#long, #lat {
+  width: 3em;
+  margin: 0 1em 0 0;
+}
+
+div.submit {
+  text-align: center;
+}
+
 #map {
+  margin: 0 auto;
   width: 500px;
   height: 400px;
   background-color: #CCC;
