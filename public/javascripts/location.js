@@ -11,4 +11,4 @@ function showPosition(position) {
   document.getElementById("long").value = position.coords.longitude;
 }
 
-document.getElementById("location").addEventListener("click", getLocation);
+window.onload = getLocation();

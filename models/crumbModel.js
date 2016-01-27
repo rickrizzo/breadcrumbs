@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var crumbSchema = new Schema({
-  "trip": String,
+  "name": String,
   "latitude": Number,
   "longitude": Number
 });

@@ -6,12 +6,12 @@ function getPoints() {
 }
 
 function initialize() {
-  var testPoint = {lat: -25.363, lng: 131.044};
+  var center = {lat: 39.50, lng: -98.35};
   var points = getPoints();
   
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: testPoint,
-    zoom: 4,
+    center: center,
+    zoom: 3,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
 
@@ -22,12 +22,6 @@ function initialize() {
       title: points[count].trip
     });
   }
-
-  var marker = new google.maps.Marker({
-    position: testPoint,
-    map: map,
-    title: 'Test Point'
-  });
 }
 
 // draw map

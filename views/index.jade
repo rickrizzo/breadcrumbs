@@ -18,8 +18,8 @@ block content
       
       //Trip Name
       div.input
-        label(for="trip") Trip Name: 
-        input#trip(type="text", name="trip")
+        label(for="name") Trip Name: 
+        input#trip(type="text", name="name", placeholder="Spot 1", required)
 
       //Location
       div.input
@@ -30,9 +30,6 @@ block content
         //Longitude
         label(for="long") Longitude: 
         input#long(type="text", name="long" required)
-        
-        //Get Location
-        button#location.btn Get Location
 
       //Submit Location
       div.submit

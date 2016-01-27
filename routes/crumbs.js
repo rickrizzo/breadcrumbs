@@ -13,9 +13,9 @@ router.get('/', function(req, res, next) {
   crumbController.showAll(req, res);
 });
 
-// draw map
-router.get('/map', function(req, res, next) {
-
+// delete all
+router.get('/deleteAll', function(req, res, next) {
+  crumbController.deleteAll(req, res);
 });
 
 module.exports = router;
